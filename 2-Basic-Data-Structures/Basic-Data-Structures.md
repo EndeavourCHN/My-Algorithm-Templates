@@ -40,6 +40,8 @@
 - 大小：`d.size();`
 - 判空：`d.empty();`
 
+## 二）链式结构
+
 ### 5 链表 list
 - 定义：`list<int> l;`
 - 头部插入：`l.push_front(x);`
@@ -61,7 +63,7 @@
   for (it = l.begin(); it != l.end(); it++) { /* ... */ }
   ```
 
-## 二）集合
+## 三）关联式容器
 
 ### 6 集合 set
 - 定义：`set<int> s;`
