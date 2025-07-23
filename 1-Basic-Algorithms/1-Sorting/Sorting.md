@@ -76,7 +76,7 @@ for (int i = 1; i <= n; i++) {
 
 ```cpp
 for (int i = 1; i < n; i++) {
-    for (int j = 1; j < n - i; j++) {
+    for (int j = 1; j <= n - i; j++) {
         if (a[j] > a[j + 1]) {
             int tmp = a[j];
             a[j] = a[j + 1];
@@ -93,13 +93,12 @@ for (int i = 1; i < n; i++) {
 ```cpp
 for (int i = 2; i <= n; i++) {
     int tmp = a[i];
-    for (int j = i - 1; j > 0; j--) {
-        if (a[j] > tmp) {
-            a[j + 1] = a[j];
-            break;
-        }
-        a[j + 1] = tmp;
+    int j;
+    for (j = i - 1; j > 0; j--) {
+        if (a[j] > tmp) a[j + 1] = a[j];
+        else break;
     }
+    a[j + 1] = tmp;
 }
 ```
 
