@@ -27,7 +27,7 @@ for (int S = 0; S < U; S++) {
         if (__builtin_popcount(S) != 2) continue;
         if (S & (1 << i)) cout << a[i] << ' ';
     }
-    cout << endl;
+    if (__builtin_popcount(S) == 2) cout << endl;
 }
 ```
 
@@ -43,11 +43,11 @@ for (int S = 0; S < U; S++) {
 
 示例：
 ```cpp
-vector<int> v = {1, 2, 3};
+int a[3] = {1, 2, 3};
 do {
-    for (int x : v) cout << x << " ";
+    for (int i = 0; i < 3; i++) cout << a[i] << " ";
     cout << endl;
-} while (next_permutation(v.begin(), v.end()));
+} while (next_permutation(a, a + 3));
 ```
 
 示例输出：
