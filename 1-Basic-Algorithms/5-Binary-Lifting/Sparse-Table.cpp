@@ -2,7 +2,15 @@
 #define MAXN 50010
 using namespace std;
 
-int n, q, h[MAXN], log_2[MAXN], rmax[MAXN][18], rmin[MAXN][18]; // rmax[i][j] 表示 i 到 2^j 的最大值，rmin[i][j] 表示 i 到 2^j 的最小值
+/** 
+ * n 为原数组长度
+ * q 为查询次数
+ * h 为原数组
+ * log_2[i] 预存储 (int)floor(log2(i)) 的结果
+ * rmax[i][j] 表示 i 到 2^j 的最大值
+ * rmin[i][j] 表示 i 到 2^j 的最小值
+ */
+int n, q, h[MAXN], log_2[MAXN], rmax[MAXN][18], rmin[MAXN][18]; 
 
 void init() {
 	for (int i = 1; i <= n; i++) { // 初始化
