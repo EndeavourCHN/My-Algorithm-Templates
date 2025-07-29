@@ -6,10 +6,11 @@
 
 - 头文件：`#include <algorithm>`
 - 用法：`sort(begin, end);` 或 `sort(begin, end, cmp);`
+- 时间复杂度： $O(n \log n)$
 
-    默认为升序排序，其他排序策略由 $cmp$ 指定。
+默认为升序排序，其他排序策略由 $cmp$ 指定。
 
-示例（对数组排序）：
+#### 示例（对数组排序）：
 ```cpp
 sort(a + 1, a + 1 + n);
 
@@ -20,7 +21,7 @@ bool cmp(int x, int y) {
 sort(a + 1, a + 1 + n, cmp);
 ```
 
-示例（对结构体排序）：
+#### 示例（对结构体排序）：
 ```cpp
 struct Node {
     int no, val;
