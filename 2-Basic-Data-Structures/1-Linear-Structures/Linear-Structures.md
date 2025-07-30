@@ -1,8 +1,10 @@
-# 基础数据结构
-
-## 一）线性表
+# 线性结构
 
 ### 1 动态数组 vector
+
+支持随机访问（时间复杂度 $O(1)$ ），添加元素时可自动扩容。
+
+- 头文件：`#include <vector>`
 - 定义：`vector<int> v;`
 - 添加元素：`v.push_back(x);`
 - 访问元素：`v[i]`
@@ -13,6 +15,10 @@
 - 排序：`sort(v.begin(), v.end());`
 
 ### 2 栈 stack
+
+**LIFO**（后进先出），只能操作栈顶。
+
+- 头文件：`#include <stack>`
 - 定义：`stack<int> s;`
 - 入栈：`s.push(x);`
 - 出栈：`s.pop();`
@@ -21,6 +27,10 @@
 - 判空：`s.empty();`
 
 ### 3 队列 queue
+
+**FIFO**（先进先出），只能操作队首。
+
+- 头文件：`#include <queue>`
 - 定义：`queue<int> q;`
 - 入队：`q.push(x);`
 - 出队：`q.pop();`
@@ -29,6 +39,10 @@
 - 判空：`q.empty();`
 
 ### 4 双端队列 deque
+
+既可以操作队首，也可以操作队尾。
+
+- 头文件：`#include <deque>`
 - 定义：`deque<int> d;`
 - 头部插入：`d.push_front(x);`
 - 尾部插入：`d.push_back(x);`
@@ -40,9 +54,9 @@
 - 大小：`d.size();`
 - 判空：`d.empty();`
 
-## 二）链式结构
-
 ### 5 链表 list
+
+- 头文件：`#include <list>`
 - 定义：`list<int> l;`
 - 头部插入：`l.push_front(x);`
 - 尾部插入：`l.push_back(x);`
@@ -61,36 +75,4 @@
   for (int x : l) { /* ... */ }
 
   for (it = l.begin(); it != l.end(); it++) { /* ... */ }
-  ```
-
-## 三）关联式容器
-
-### 6 集合 set
-- 定义：`set<int> s;`
-- 插入：`s.insert(x);`
-- 删除（按元素）：`s.erase(x);`
-- 删除（按地址）：`s.erase(it);`
-- 查找：`s.find(x);`，查询x在集合中的地址，如果这个数不存在，返回 `s.end()`。
-- 查询不小于 $x$ 的最小数的地址：`s.lower_bound(x);`
-- 查询不大于 $x$ 的最大数的地址：`s.upper_bound(x);`
-- 大小：`s.size();`
-- 判空：`s.empty();`
-- 遍历：
-  ```cpp
-  for (int x : s) { /* ... */ }
-  ```
-
-### 7 映射表 map
-- 定义：`map<A, B> m;`，创建下标类型为 `A`，元素类型为 `B` 的映射表。
-- 插入/赋值：`m[key] = value;`
-- 查找：`m.find(key) != m.end();`
-- 删除：`m.erase(key);`
-- 大小：`m.size();`
-- 判空：`m.empty();`
-- 遍历：
-  ```cpp
-  for (auto &p : m) {
-      int key = p.first, value = p.second;
-      // ...
-  }
   ```
