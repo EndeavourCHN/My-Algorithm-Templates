@@ -4,22 +4,24 @@
 
 相关内容按照个人理解与习惯记录，随着学习与练习情况更新补充。鉴于鄙人水平有限，难免有错谬疏漏之处，还请谅解。若能提交Issues指正/补充，不胜感激！
 
-考虑到控制台终端编码兼容性，文件命名和程序中输出部分文本使用英语，注释及md文件使用中文。
+考虑到控制台终端编码兼容性，文件命名和程序中输出部分文本使用英语，注释及 Markdown 文件使用中文。
 
 This is my code templates library for competitive programming. For better compatibility of console terminal encoding, the file names and the output parts of the programs are in English, and the comments and Markdown files are in Chinese. 
 
 ### My OJ Accounts
 
-洛谷 (Luogu): https://www.luogu.com.cn/user/606580
-
 Codeforces: https://codeforces.com/profile/EndeavourCHN
+
+LeetCode: https://leetcode.cn/u/agitated-satoshihdp/
+
+洛谷 (Luogu): https://www.luogu.com.cn/user/606580
 
 ## 目录
 
 ### 大纲
 
 ```
-My-OI-Wiki-Code-Templates-Library/
+My-Algorithm-Templates/
 ├── 1-Basic-Algorithms/         # 基础算法
 ├── 2-Basic-Data-Structures/    # 基础数据结构
 ├── 3-Searching/                # 搜索
@@ -47,6 +49,7 @@ My-OI-Wiki-Code-Templates-Library/
 ```
 
 ### 第二章
+
 ```
 2-Basic-Data-Structures/        # 基础数据结构
 ├── 1-Linear-Structures/        # 线性结构
@@ -61,4 +64,28 @@ My-OI-Wiki-Code-Templates-Library/
 └── 3-Associative-Containers/   # 关联式容器
     ├── 1-set/                  # 集合
     └── 2-map/                  # 映射表
+```
+
+### 第三章
+
+```
+3-Searching/            # 搜索
+├── 1-DFS/              # 深度优先搜索
+├── 2-BFS/              # 广度优先搜索
+├── 3-​​Memoization​​/      # 记忆化搜索
+├── 4-Pruning​​/          # 剪枝
+├── 5-IDDFS/            # 迭代加深搜索
+├── 6-Bidirectional/    # 双向搜索
+│   ├── 1-DFS/          # 双向DFS
+│   └── 2-BFS/          # 双向BFS
+├── 7-A*/               # 启发式搜索
+└── 8-IDA*/             # 启发式迭代加深搜索
+```
+
+### 第四章
+
+```
+4-DP/                   # 动态规划
+├── 1-Knapsack/         # 背包问题
+
 ```
