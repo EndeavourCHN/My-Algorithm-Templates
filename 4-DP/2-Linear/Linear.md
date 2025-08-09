@@ -1,4 +1,3 @@
-
 # 线性动态规划（Linear DP）
 
 线性动态规划是指状态转移只与前面若干个线性排列的状态有关的动态规划问题。常见于序列、数组等一维结构的最优解问题。
@@ -50,6 +49,30 @@ int lengthOfLIS(vector<int>& nums) {
             }
         }
         ans = max(ans, dp[i]);
+    }
+    return ans;
+}
+```
+
+## 代码示例（最长公共子串）
+
+```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+// 返回最长公共子串的长度
+int longestCommonSubstring(const string& a, const string& b) {
+    int n = a.size(), m = b.size(), ans = 0;
+    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j <= m; ++j) {
+            if (a[i - 1] == b[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1] + 1;
+                ans = max(ans, dp[i][j]);
+            }
+        }
     }
     return ans;
 }
