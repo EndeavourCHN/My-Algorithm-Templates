@@ -4,6 +4,8 @@
 
 相关内容按照个人理解与习惯记录，随着学习与练习情况更新补充。鉴于鄙人水平有限，难免有错谬疏漏之处，还请谅解。若能提交Issues指正/补充，不胜感激！
 
+**目前很多内容尚不完善，计划先构建大致框架，后续会逐步润色。**
+
 考虑到控制台终端编码兼容性，文件命名和程序中输出部分文本使用英语，注释及 Markdown 文件使用中文。
 
 This is my code templates library for competitive programming. For better compatibility of console terminal encoding, the file names and the output parts of the programs are in English, and the comments and Markdown files are in Chinese. 
@@ -12,7 +14,7 @@ This is my code templates library for competitive programming. For better compat
 
 Codeforces: https://codeforces.com/profile/EndeavourCHN
 
-LeetCode: https://leetcode.cn/u/agitated-satoshihdp/
+LeetCode: https://leetcode.cn/u/endeavourchn/
 
 洛谷 (Luogu): https://www.luogu.com.cn/user/606580
 
@@ -33,7 +35,7 @@ My-Algorithm-Templates/
 └── 9-Other/                    # 其他
 ```
 
-### 第一章
+### 第一章 基础算法
 
 ```
 1-Basic-Algorithms/         # 基础算法
@@ -48,7 +50,7 @@ My-Algorithm-Templates/
 └── 9-Discretization/       # 离散化
 ```
 
-### 第二章
+### 第二章 基础数据结构
 
 ```
 2-Basic-Data-Structures/        # 基础数据结构
@@ -66,7 +68,7 @@ My-Algorithm-Templates/
     └── 2-map/                  # 映射表
 ```
 
-### 第三章
+### 第三章 搜索
 
 ```
 3-Searching/            # 搜索
@@ -82,10 +84,15 @@ My-Algorithm-Templates/
 └── 8-IDA*/             # 启发式迭代加深搜索
 ```
 
-### 第四章
+### 第四章 动态规划
 
 ```
-4-DP/                   # 动态规划
-├── 1-Knapsack/         # 背包问题
-
+4-DP/                       # 动态规划
+├── 1-Knapsack/             # 背包动态规划
+├── 2-Linear/               # 线性动态规划
+├── 3-Interval/             # 区间动态规划
+├── 4-Tree/                 # 树形动态规划
+└── 5-State-Compression/    # 状态压缩动态规划
 ```
+
+### 第五章 字符串
