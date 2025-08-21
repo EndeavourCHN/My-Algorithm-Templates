@@ -12,7 +12,7 @@ int main() {
     do {
         for (int i = 0; i < n; i++) cout << a[i] << " ";
         cout << endl;
-    } while (next_permutation(a, a + n));
+    } while (next_permutation(a, a + n)); // 生成下一个排列
     
     return 0;
 }
