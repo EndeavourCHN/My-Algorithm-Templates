@@ -37,12 +37,16 @@ LeetCode: https://leetcode.cn/u/endeavourchn/
 [1-Basic-Algorithms/](1-Basic-Algorithms/) # 基础算法
 - [1-Sorting/](1-Basic-Algorithms/1-Sorting/Sorting.md) # 排序
 - [2-Brute-Force/](1-Basic-Algorithms/2-Brute-Force/Brute-Force.md) # 枚举
+  - [1-Subset-Enumeration](1-Basic-Algorithms/2-Brute-Force/Brute-Force.md/#1-子集枚举) # 子集枚举
+  - [2-Permutation-Enumeration](1-Basic-Algorithms/2-Brute-Force/Brute-Force.md/#2-排列枚举) # 排列枚举
 - [3-Binary-Search/](1-Basic-Algorithms/3-Binary-Search/Binary-Search.md) # 二分查找
 - [4-Divide-and-Conquer/](1-Basic-Algorithms/4-Divide-and-Conquer/Divide-and-Conquer.md) # 分治
 - [5-Binary-Lifting/](1-Basic-Algorithms/5-Binary-Lifting/Binary-Lifting.md) # 倍增
 - [6-Greedy/](1-Basic-Algorithms/6-Greedy/Greedy.md) # 贪心
 - [7-High-Precision/](1-Basic-Algorithms/7-High-Precision/High-Precision.md) # 高精度
-- [8-Preprocessing/](1-Basic-Algorithms/8-Preprocessing/Preprocessing.md) # 预处理（前缀和 & 差分）
+- [8-Preprocessing/](1-Basic-Algorithms/8-Preprocessing/Preprocessing.md) # 预处理
+  - [1-Prefix-Sum](1-Basic-Algorithms/8-Preprocessing/Preprocessing.md/#1-前缀和) # 前缀和
+  - [2-Difference-Array](1-Basic-Algorithms/8-Preprocessing/Preprocessing.md/#2-差分) # 差分
 - [9-Discretization/](1-Basic-Algorithms/9-Discretization/Discretization.md) # 离散化
 
 ### 第二章 基础数据结构
@@ -62,6 +66,11 @@ LeetCode: https://leetcode.cn/u/endeavourchn/
   - [2-Mono-Queue](2-Basic-Data-Structures/3-Util/Util.md/#单调队列) # 单调队列
 
 ### 第三章 搜索
+
+[3-Searching/](3-Searching/) # 搜索
+- [1-DFS/](3-Searching/1-DFS/DFS.md) # 深度优先搜索
+- [2-BFS/](3-Searching/2-BFS/BFS.md) # 广度优先搜索
+- [3-Memoization/](3-Searching/3-Memoization/Memoization.md) # 记忆化搜索
 
 ```
 3-Searching/            # 搜索
@@ -84,8 +93,7 @@ LeetCode: https://leetcode.cn/u/endeavourchn/
 ├── 1-Knapsack/             # 背包动态规划
 ├── 2-Linear/               # 线性动态规划
 ├── 3-Interval/             # 区间动态规划
-├── 4-Tree/                 # 树形动态规划
-└── 5-State-Compression/    # 状态压缩动态规划
+└── 4-State-Compression/    # 状态压缩动态规划
 ```
 
 ### 第五章 字符串
