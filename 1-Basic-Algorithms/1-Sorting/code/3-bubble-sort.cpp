@@ -1,5 +1,5 @@
 #include <iostream>
-#define MAXN 1000010
+#define MAXN 100010
 using namespace std;
 
 int n, a[MAXN];

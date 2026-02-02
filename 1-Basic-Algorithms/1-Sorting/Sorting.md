@@ -49,13 +49,13 @@ sort(node + 1, node + 1 + n, cmp);
 ### 1 计数排序 (Counting Sort)
 
 - 基本思想：统计数组中每个值的出现次数，根据统计结果按顺序回填。
-- 时间复杂度： $O(n+m)$ 
+- 时间复杂度： $O(n + m)$ 
 - 空间复杂度： $O(m)$ 
 
   其中 $m$ 为数组 $a$ 中元素范围。
 
 ```cpp
-int cnt[m] = {0};
+int cnt[MAXN] = {0};
 for (int i = 1; i <= n; i++) {
     cnt[a[i]]++;
 }
@@ -69,7 +69,7 @@ for (int i = 1; i <= m; i++) {
 ### 2 选择排序 (Selection Sort)
 
 - 基本思想：每次从未排序部分选择​​最小（或最大）元素​​，放到已排序部分的末尾。
-- 时间复杂度： $O(n^2)$
+- 时间复杂度： $O(n ^ 2)$
 - 空间复杂度： $O(1)$
 
 ```cpp
@@ -87,7 +87,7 @@ for (int i = 1; i <= n; i++) {
 ### 3 冒泡排序 (Bubble Sort)
 
 - 基本思想：通过​​相邻元素两两比较​​，将较大的元素逐步“冒泡"到数组末端。
-- 时间复杂度： $O(n^2)$
+- 时间复杂度： $O(n ^ 2)$
 - 空间复杂度： $O(1)$
 
 ```cpp
@@ -105,13 +105,12 @@ for (int i = 1; i < n; i++) {
 ### 4 插入排序 (Insertion Sort)
 
 - 基本思想：向前比较并移动比当前元素大的元素，将每个新元素​​插入到已排序部分的正确位置。
-- 时间复杂度： $O(n^2)$
+- 时间复杂度： $O(n ^ 2)$
 - 空间复杂度： $O(1)$
 
 ```cpp
 for (int i = 2; i <= n; i++) {
-    int tmp = a[i];
-    int j;
+    int tmp = a[i], j;
     for (j = i - 1; j > 0; j--) {
         if (a[j] > tmp) a[j + 1] = a[j];
         else break;
@@ -158,7 +157,7 @@ void mergeSort(int a[], int l, int r) {
     int mid = (l + r) / 2;
     mergeSort(a, l, mid);
     mergeSort(a, mid + 1, r); // 递归，对左右两个子数组分别进行归并排序
-    for (int i = l, j = l, k = mid + 1; i <= r; i++){
+    for (int i = l, j = l, k = mid + 1; i <= r; i++) {
         if (j == mid + 1) tmp[i] = a[k++]; // 如果右侧元素已经全部取完，则取左侧元素
         else if(k == r + 1) tmp[i] = a[j++]; // 如果左侧元素已经全部取完，则取右侧元素
         else tmp[i] = a[j] < a[k] ? a[j++] : a[k++]; // 如果左侧元素小于右侧元素，则取左侧元素，否则取右侧元素

@@ -1,5 +1,5 @@
 #include <iostream>
-#define MAXN 1000010
+#define MAXN 100010
 using namespace std;
 
 int n, a[MAXN], tmp[MAXN];
@@ -9,7 +9,7 @@ void mergeSort(int a[], int l, int r) {
     int mid = (l + r) / 2;
     mergeSort(a, l, mid);
     mergeSort(a, mid + 1, r); // 递归，对左右两个子数组分别进行归并排序
-    for (int i = l, j = l, k = mid + 1; i <= r; i++){
+    for (int i = l, j = l, k = mid + 1; i <= r; i++) {
         if (j == mid + 1) tmp[i] = a[k++]; // 如果右侧元素已经全部取完，则取左侧元素
         else if(k == r + 1) tmp[i] = a[j++]; // 如果左侧元素已经全部取完，则取右侧元素
         else tmp[i] = a[j] < a[k] ? a[j++] : a[k++]; // 如果左侧元素小于右侧元素，则取左侧元素，否则取右侧元素
