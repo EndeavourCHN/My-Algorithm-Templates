@@ -1,6 +1,5 @@
 #include <iostream>
-#define maxm 10000010
-#define maxn 100010
+#define maxm 100010
 using namespace std;
 
 int m, n, w, v, s, dp[maxm];
@@ -9,9 +8,9 @@ int main() {
     cin >> n >> m;
     for (int i = 1; i <= n; ++i) {
         cin >> w >> v >> s;
-        for (int k = 1; k <= s; k *= 2) { // 分解为2的幂次
+        for (int k = 1; k <= s; k *= 2) { // 分解为 2 的幂次
             int kv = k * v, kw = k * w;
-            // 0/1背包过程
+            // 0/1 背包过程
             for (int j = m; j >= kw; j--) {
                 dp[j] = max(dp[j], dp[j - kw] + kv);
             }
