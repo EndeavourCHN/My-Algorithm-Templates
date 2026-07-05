@@ -62,6 +62,19 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  giscus:
+    repo: EndeavourCHN/My-Algorithm-Templates
+    repo_id: R_kgDOPMS5GQ
+    category: Announcements
+    category_id: DIC_kwDOPMS5Gc4Ctey0
+    mapping: pathname
+    strict: "0"
+    reactions_enabled: "1"
+    emit_metadata: "0"
+    input_position: bottom
+    lang: zh-CN
+
 nav:
   - 首页: index.md
   - 算法基础:
