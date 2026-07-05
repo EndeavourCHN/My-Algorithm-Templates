@@ -37,12 +37,14 @@
     order: 5;
   }
 
-  .oi-sidebar-collapsed .md-sidebar--primary {
+  .oi-sidebar-collapsed .md-sidebar--primary,
+  .oi-sidebar-collapsed .md-sidebar--secondary {
     display: none;
   }
 
   .oi-sidebar-collapsed .md-content {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .oi-sidebar-collapsed .md-overlay {
