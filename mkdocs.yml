@@ -1,13 +1,21 @@
 site_name: My Algorithm Templates
 site_description: 信竞算法笔记与代码模板文档站
 site_author: EndeavourCHN
+repo_url: https://github.com/EndeavourCHN/My-Algorithm-Templates
+repo_name: EndeavourCHN/My-Algorithm-Templates
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 EndeavourCHN
 
 exclude_docs: |
   superpowers/**
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
+  logo: material/school
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.sections
@@ -15,6 +23,11 @@ theme:
     - search.highlight
     - search.suggest
     - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: white
+      accent: indigo
 
 markdown_extensions:
   - admonition
@@ -35,6 +48,9 @@ markdown_extensions:
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - 首页: index.md
