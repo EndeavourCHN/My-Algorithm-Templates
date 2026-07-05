@@ -13,8 +13,8 @@ theme:
   name: material
   custom_dir: overrides
   language: zh
-  logo: material/school
   icon:
+    logo: material/school
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
