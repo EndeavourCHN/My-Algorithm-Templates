@@ -1,6 +1,7 @@
 site_name: My Algorithm Templates
 site_description: 信竞算法笔记与代码模板文档站
 site_author: EndeavourCHN
+site_url: https://endeavourchn.github.io/My-Algorithm-Templates/
 repo_url: https://github.com/EndeavourCHN/My-Algorithm-Templates
 repo_name: EndeavourCHN/My-Algorithm-Templates
 edit_uri: edit/main/docs/
