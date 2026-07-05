@@ -15,6 +15,16 @@
   box-shadow: none;
 }
 
+[dir="ltr"] .md-header__title {
+  margin-left: 0.6rem;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-header__button[for="__drawer"] {
+    display: inline-block;
+  }
+}
+
 .md-tabs {
   border-bottom: 1px solid #eeeeee;
 }
@@ -44,6 +54,30 @@
 
 .md-source {
   color: #222222;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1f1f1f;
+  --md-primary-bg-color: #eeeeee;
+  --md-default-bg-color: #202124;
+  --md-default-fg-color: #eeeeee;
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #1f1f1f;
+  border-color: #333333;
+  color: #eeeeee;
+}
+
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-tabs__link,
+[data-md-color-scheme="slate"] .md-source {
+  color: #eeeeee;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: #303134;
 }
 
 .md-main__inner {

@@ -28,6 +28,15 @@ theme:
     - scheme: default
       primary: white
       accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
 
 markdown_extensions:
   - admonition
