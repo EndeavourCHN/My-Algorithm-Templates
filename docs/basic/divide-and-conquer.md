@@ -29,5 +29,5 @@ void mergeSort(int a[], int l, int r) {
 
 - 快速排序
 - 归并排序
-- 汉诺塔问题（[示例程序](Hanoi.cpp)）\
+- 汉诺塔问题（[示例程序](code/hanoi.cpp)）\
   ……
