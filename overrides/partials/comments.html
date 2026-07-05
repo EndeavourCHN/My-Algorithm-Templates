@@ -1,0 +1,24 @@
+{% if config.extra.giscus %}
+  <div class="giscus"></div>
+  <script>
+    const giscusTheme = document.body.getAttribute("data-md-color-scheme") === "slate" ? "dark" : "light";
+    const giscusScript = document.createElement("script");
+
+    giscusScript.src = "https://giscus.app/client.js";
+    giscusScript.setAttribute("data-repo", "{{ config.extra.giscus.repo }}");
+    giscusScript.setAttribute("data-repo-id", "{{ config.extra.giscus.repo_id }}");
+    giscusScript.setAttribute("data-category", "{{ config.extra.giscus.category }}");
+    giscusScript.setAttribute("data-category-id", "{{ config.extra.giscus.category_id }}");
+    giscusScript.setAttribute("data-mapping", "{{ config.extra.giscus.mapping }}");
+    giscusScript.setAttribute("data-strict", "{{ config.extra.giscus.strict }}");
+    giscusScript.setAttribute("data-reactions-enabled", "{{ config.extra.giscus.reactions_enabled }}");
+    giscusScript.setAttribute("data-emit-metadata", "{{ config.extra.giscus.emit_metadata }}");
+    giscusScript.setAttribute("data-input-position", "{{ config.extra.giscus.input_position }}");
+    giscusScript.setAttribute("data-theme", giscusTheme);
+    giscusScript.setAttribute("data-lang", "{{ config.extra.giscus.lang }}");
+    giscusScript.setAttribute("crossorigin", "anonymous");
+    giscusScript.async = true;
+
+    document.currentScript.parentElement.appendChild(giscusScript);
+  </script>
+{% endif %}
